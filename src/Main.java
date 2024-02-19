@@ -13,7 +13,6 @@ public class Main {
         String year = generateRandomYear();
         String month = generateRandomMonth();
         String day = generateRandomDay();
-        String gender = generateRandomGender();
         String sequence = generateRandomSequence();
         String citizenship = generateRandomCitizenshipStatus();
 
@@ -39,9 +38,7 @@ public class Main {
         return String.format("%02d", randomDay);
     }
 
-    private static String generateRandomGender() {
-        return new Random().nextBoolean() ? "4" : "5";
-    }
+
 
     private static String generateRandomSequence() {
         int sequenceValue = new Random().nextInt(5000);
