@@ -24,7 +24,7 @@ public class Main {
 
     private static String generateRandomYear() {
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
-        int randomYear = currentYear - new Random().nextInt(80);
+        int randomYear = currentYear - new Random().nextInt(42) - 18; // Generate between 18 and 59 years old
         return String.format("%02d", randomYear % 100);
     }
 
